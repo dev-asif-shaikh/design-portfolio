@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Dark color for glass morphic effect */
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 0.2vw 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent dark background for glass morphic effect */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 2px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    display: inline;
+    width: 10vw;
+  }
+  
+  nav ul li a {
+    width: 2vw;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card {
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    margin: 10px;
+}
+  
+.image-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer {
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent dark background for glass morphic effect */
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+    header{
+        padding: 0;
+    }
+}
